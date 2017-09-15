@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
+using ReactMusicStore.Core.Domain.Entities.Foundation;
 using ReactMusicStore.Core.Domain.Entities.Validations;
 using ReactMusicStore.Core.Domain.Interfaces.Validation;
 using ReactMusicStore.Core.Domain.Validation;
 
 namespace ReactMusicStore.Core.Domain.Entities
 {
-    public  class Order : ISelfValidation
+    public  class Order : BaseEntity, ISelfValidation
     {
-        public int OrderId { get; set; }
+        //public int OrderId { get; set; }
         public DateTime OrderDate { get; set; }
         public string Username { get; set; }
         public string FirstName { get; set; }

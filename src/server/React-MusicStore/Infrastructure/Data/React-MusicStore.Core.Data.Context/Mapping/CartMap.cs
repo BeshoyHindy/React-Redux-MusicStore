@@ -11,7 +11,7 @@ namespace ReactMusicStore.Core.Data.Context.Mapping
             HasKey(t => t.RecordId);
 
             // Properties
-            Property(t => t.CartId)
+            Property(t => t.Id)
                 .IsRequired();
 
             Property(t => t.AlbumId)

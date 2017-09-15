@@ -1,12 +1,13 @@
-﻿using ReactMusicStore.Core.Domain.Entities.Validations;
+﻿using ReactMusicStore.Core.Domain.Entities.Foundation;
+using ReactMusicStore.Core.Domain.Entities.Validations;
 using ReactMusicStore.Core.Domain.Interfaces.Validation;
 using ReactMusicStore.Core.Domain.Validation;
 
 namespace ReactMusicStore.Core.Domain.Entities
 {
-    public class OrderDetail : ISelfValidation
+    public class OrderDetail : BaseEntity, ISelfValidation
     {
-        public int OrderDetailId { get; set; }
+        //public int OrderDetailId { get; set; }
         public int OrderId { get; set; }
         public int AlbumId { get; set; }
         public int Quantity { get; set; }

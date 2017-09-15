@@ -7,6 +7,6 @@ namespace ReactMusicStore.Services.Interfaces
     public interface IAlbumAppService : IAppService<Album>
     {
         IEnumerable<Album> GetTopSellingAlbums(int count);
-        
+
     }
 }

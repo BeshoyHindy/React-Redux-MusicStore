@@ -8,7 +8,7 @@ namespace ReactMusicStore.Services
     public class AppService<TContext> : ITransactionAppService<TContext>
         where TContext : IDbContext, new()
     {
-        private IUnitOfWork<TContext> _uow;
+        private IUnitOfWork<TContext> _unitOfWork;
 
         public AppService()
         {
@@ -19,13 +19,13 @@ namespace ReactMusicStore.Services
 
         public virtual void BeginTransaction()
         {
-            _uow = ServiceLocator.Current.GetInstance<IUnitOfWork<TContext>>();
-            _uow.BeginTransaction();
+            _unitOfWork = ServiceLocator.Current.GetInstance<IUnitOfWork<TContext>>();
+            _unitOfWork.BeginTransaction();
         }
 
         public virtual void Commit()
         {
-            _uow.SaveChanges();
+            _unitOfWork.SaveChanges();
         }
     }
 

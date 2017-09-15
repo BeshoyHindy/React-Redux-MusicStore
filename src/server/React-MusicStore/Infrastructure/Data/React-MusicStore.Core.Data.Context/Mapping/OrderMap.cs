@@ -8,7 +8,7 @@ namespace ReactMusicStore.Core.Data.Context.Mapping
         public OrderMap()
         {
             // Primary Key
-            HasKey(t => t.OrderId);
+            HasKey(t => t.Id);
 
             // Properties
             Property(t => t.OrderDate)

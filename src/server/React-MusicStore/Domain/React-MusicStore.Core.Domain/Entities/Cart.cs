@@ -1,14 +1,16 @@
 ﻿using System;
+using ReactMusicStore.Core.Domain.Entities.Foundation;
 using ReactMusicStore.Core.Domain.Entities.Validations;
 using ReactMusicStore.Core.Domain.Interfaces.Validation;
 using ReactMusicStore.Core.Domain.Validation;
 
 namespace ReactMusicStore.Core.Domain.Entities
 {
-    public class Cart : ISelfValidation
+    public class Cart : BaseEntity, ISelfValidation
     {
-        public int RecordId { get; set; }
-        public string CartId { get; set; }
+	    //public string CartId { get; set; }
+
+		public int RecordId { get; set; }
         public int AlbumId { get; set; }
         public int Count { get; set; }
         public DateTime DateCreated { get; set; }

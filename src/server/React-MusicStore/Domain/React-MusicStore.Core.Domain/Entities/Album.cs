@@ -1,13 +1,14 @@
 ﻿using System.Collections.Generic;
+using ReactMusicStore.Core.Domain.Entities.Foundation;
 using ReactMusicStore.Core.Domain.Entities.Validations;
 using ReactMusicStore.Core.Domain.Interfaces.Validation;
 using ReactMusicStore.Core.Domain.Validation;
 
 namespace ReactMusicStore.Core.Domain.Entities
 {
-    public class Album : ISelfValidation
+    public class Album : BaseEntity, ISelfValidation
     {
-        public int AlbumId { get; set; }
+        //public int AlbumId { get; set; }
         public int GenreId { get; set; }
         public int ArtistId { get; set; }
         public string Title { get; set; }

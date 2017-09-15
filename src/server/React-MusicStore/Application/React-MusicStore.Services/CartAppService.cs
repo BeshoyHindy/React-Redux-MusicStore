@@ -10,7 +10,7 @@ using ReactMusicStore.Services.Interfaces;
 
 namespace ReactMusicStore.Services
 {
-    public class CartAppService : AppService<MusicStoreContext>, ICartAppService
+    public class CartAppService : AppService<DbMusicStoreContext>, ICartAppService
     {
         private readonly ICartService _service;
 

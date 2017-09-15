@@ -8,7 +8,7 @@ namespace ReactMusicStore.Core.Data.Context.Mapping
         public GenreMap()
         {
             // Primary Key
-            HasKey(t => t.GenreId);
+            HasKey(t => t.Id);
 
             // Properties
             Property(t => t.Name)

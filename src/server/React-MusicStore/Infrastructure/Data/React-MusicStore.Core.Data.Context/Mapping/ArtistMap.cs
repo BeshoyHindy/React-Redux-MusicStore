@@ -8,7 +8,7 @@ namespace ReactMusicStore.Core.Data.Context.Mapping
         public ArtistMap()
         {
             // Primary Key
-            HasKey(t => t.ArtistId);
+            HasKey(t => t.Id);
 
             // Properties
             Property(t => t.Name)

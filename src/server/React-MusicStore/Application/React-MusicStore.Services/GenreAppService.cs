@@ -9,7 +9,7 @@ using ReactMusicStore.Services.Interfaces;
 
 namespace ReactMusicStore.Services
 {
-    public class GenreAppService : AppService<MusicStoreContext>, IGenreAppService
+    public class GenreAppService : AppService<DbMusicStoreContext>, IGenreAppService
     {
         private readonly IGenreService _service;
 

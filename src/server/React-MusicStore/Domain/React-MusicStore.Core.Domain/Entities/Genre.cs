@@ -1,18 +1,19 @@
 ﻿using System.Collections.Generic;
+using ReactMusicStore.Core.Domain.Entities.Foundation;
 using ReactMusicStore.Core.Domain.Entities.Validations;
 using ReactMusicStore.Core.Domain.Interfaces.Validation;
 using ReactMusicStore.Core.Domain.Validation;
 
 namespace ReactMusicStore.Core.Domain.Entities
 {
-    public class Genre : ISelfValidation
+    public class Genre : BaseEntity, ISelfValidation
     {
         public Genre()
         {
             Albums = new List<Album>();
         }
 
-        public int GenreId { get; set; }
+        //public int GenreId { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public ICollection<Album> Albums { get; set; }

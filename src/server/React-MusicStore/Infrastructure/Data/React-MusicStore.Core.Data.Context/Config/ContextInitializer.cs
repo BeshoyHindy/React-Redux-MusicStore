@@ -5,9 +5,9 @@ using ReactMusicStore.Core.Domain.Entities;
 
 namespace ReactMusicStore.Core.Data.Context.Config
 {
-    public class ContextInitializer : DropCreateDatabaseIfModelChanges<MusicStoreContext>
+    public class ContextInitializer : DropCreateDatabaseIfModelChanges<DbMusicStoreContext>
     {
-        protected override void Seed(MusicStoreContext context)
+        protected override void Seed(DbMusicStoreContext context)
         {
             var genres = new List<Genre>
             {

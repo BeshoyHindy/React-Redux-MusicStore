@@ -38,7 +38,7 @@ namespace ReactMusicStore.Core.Data.Repository.Dapper
                     {
                         genre = new Genre
                         {
-                            GenreId = Convert.ToInt32(dr["GenreId"]),
+                            Id = Convert.ToInt32(dr["GenreId"]),
                             Name = dr["Name"].ToString(),
                             Description = dr["Description"].ToString()
                         };
@@ -46,7 +46,7 @@ namespace ReactMusicStore.Core.Data.Repository.Dapper
 
                     genre.Albums.Add(new Album
                     {
-                        AlbumId = Convert.ToInt32(dr["AlbumId"]),
+                        Id = Convert.ToInt32(dr["AlbumId"]),
                         Title = dr["Title"].ToString(),
                         Price = Convert.ToDecimal(dr["Price"]),
                         AlbumArtUrl = dr["AlbumArtUrl"].ToString(),
