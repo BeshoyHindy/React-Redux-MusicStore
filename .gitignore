@@ -247,15 +247,36 @@ ModelManifest.xml
 # dependencies
 /node_modules
 
-# testing
-/coverage
 
-# production
-/build
+# Compiled output
+build
 
 # misc
 .DS_Store
 .env
+
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Runtime data
+database.sqlite
+
+
+# Test coverage
+coverage
+.nyc_output
+
+
+# Editors and IDEs
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Misc
+.DS_Store
+

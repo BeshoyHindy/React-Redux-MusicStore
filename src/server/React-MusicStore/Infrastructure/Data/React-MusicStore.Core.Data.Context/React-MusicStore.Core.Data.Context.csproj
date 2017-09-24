@@ -95,9 +95,9 @@
     <Compile Include="Mapping\OrderDetailMap.cs" />
     <Compile Include="Mapping\OrderMap.cs" />
     <Compile Include="DbMusicStoreContext.cs" />
-    <Compile Include="Migrations\201709150854535_Initial-Db.cs" />
-    <Compile Include="Migrations\201709150854535_Initial-Db.Designer.cs">
-      <DependentUpon>201709150854535_Initial-Db.cs</DependentUpon>
+    <Compile Include="Migrations\201709232124265_Initial-Db.cs" />
+    <Compile Include="Migrations\201709232124265_Initial-Db.Designer.cs">
+      <DependentUpon>201709232124265_Initial-Db.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\MigrationsConfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -131,8 +131,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201709150854535_Initial-Db.resx">
-      <DependentUpon>201709150854535_Initial-Db.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709232124265_Initial-Db.resx">
+      <DependentUpon>201709232124265_Initial-Db.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
